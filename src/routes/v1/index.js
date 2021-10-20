@@ -5,6 +5,10 @@ const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
 const phuongRoute = require('./phuong.route');
+const professionalRoute = require('./professional.route');
+const peopleRoute = require('./people.route');
+const worksforRoute = require('./worksfor.route');
+const companiesRoute = require('./companies.route');
 
 const router = express.Router();
 
@@ -21,7 +25,23 @@ const defaultRoutes = [
     path: '/phuongs',
     route: phuongRoute,
   },
+  {
+    path: '/professionals',
+    route: professionalRoute,
+  }, {
+    path: '/peoples',
+    route: peopleRoute,
+  },
+  {
+    path: '/worksfors',
+    route: worksforRoute,
+  },
+  {
+    path: '/companiess',
+    route: companiesRoute,
+  },
 ];
+
 
 const devRoutes = [
   // routes available only in development mode
